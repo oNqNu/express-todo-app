@@ -1,0 +1,52 @@
+Arguments: 
+  /Users/onqnu/.nodebrew/node/v16.14.0/bin/node /Users/onqnu/.nodebrew/current/bin/yarn
+
+PATH: 
+  /Users/onqnu/.nodebrew/current/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+
+Yarn version: 
+  1.22.17
+
+Node version: 
+  16.14.0
+
+Platform: 
+  darwin arm64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/modemon: Not found
+      at Request.params.callback [as _callback] (/Users/onqnu/.nodebrew/node/v16.14.0/lib/node_modules/yarn/lib/cli.js:67029:18)
+      at Request.self.callback (/Users/onqnu/.nodebrew/node/v16.14.0/lib/node_modules/yarn/lib/cli.js:140883:22)
+      at Request.emit (node:events:520:28)
+      at Request.<anonymous> (/Users/onqnu/.nodebrew/node/v16.14.0/lib/node_modules/yarn/lib/cli.js:141855:10)
+      at Request.emit (node:events:520:28)
+      at IncomingMessage.<anonymous> (/Users/onqnu/.nodebrew/node/v16.14.0/lib/node_modules/yarn/lib/cli.js:141777:12)
+      at Object.onceWrapper (node:events:639:28)
+      at IncomingMessage.emit (node:events:532:35)
+      at endReadableNT (node:internal/streams/readable:1346:12)
+      at processTicksAndRejections (node:internal/process/task_queues:83:21)
+
+npm manifest: 
+  {
+    "name": "myapp",
+    "version": "0.0.0",
+    "private": true,
+    "scripts": {
+      "start": "nodemon ./bin/www"
+    },
+    "dependencies": {
+      "cookie-parser": "~1.4.4",
+      "debug": "~2.6.9",
+      "express": "~4.16.1",
+      "http-errors": "~1.6.3",
+      "morgan": "~1.9.1",
+      "pug": "^3.0.2",
+      "modemon": "*"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
